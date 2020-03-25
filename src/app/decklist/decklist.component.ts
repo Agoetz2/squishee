@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Deck } from '../deck';
+import { Deck } from '../decks';
 
 @Component({
   selector: 'app-decklist',
@@ -11,7 +11,7 @@ export class DecklistComponent implements OnInit {
   deck: Deck = {
     name: 'White Weenies',
     numCards: 100,
-    colors: 'white',
+    color: 'white',
     deckType: 'commander',
     sideboard: false
   }

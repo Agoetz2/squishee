@@ -2,7 +2,7 @@ export interface Deck {
   
   name: string;
   numCards: number;
-  colors: string;
+  color: string;
   deckType: string;
   sideboard: boolean;
 
