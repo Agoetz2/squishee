@@ -1,6 +1,6 @@
-<h2>{{deck.name}} Details</h2>
-<div><span>Name: </span>{{deck.name  |  uppercase}}</div>
-<div><span>numCards: </span>{{deck.numCards}}</div>
-<div><span>Color: </span>{{deck.color}}</div>
-<div><span>Decktype: </span>{{deck.deckType}}</div>
-<div><span>Sideboard: </span>{{deck.sideboard}}</div>
+<h2>My Decks</h2>
+<ul class="decks">
+  <li *ngFor="let deck of decks">
+    <span class="badge">{{deck.name}}</span> {{deck.deckType}}
+  </li>
+</ul>

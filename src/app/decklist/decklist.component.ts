@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Deck } from '../decks';
+import { DECKS } from '../fakeDecks';
 
 @Component({
   selector: 'app-decklist',
@@ -8,13 +9,7 @@ import { Deck } from '../decks';
 })
 export class DecklistComponent implements OnInit {
   
-  deck: Deck = {
-    name: 'White Weenies',
-    numCards: 100,
-    color: 'white',
-    deckType: 'commander',
-    sideboard: false
-  }
+  decks = DECKS;
 
   constructor() { }
 
