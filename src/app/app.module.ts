@@ -10,4 +10,7 @@ import { DecklistComponent } from './decklist/decklist.component';
   declarations: [ AppComponent, DecklistComponent ],
   bootstrap:    [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule { 
+
+
+}
