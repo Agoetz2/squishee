@@ -1,6 +1,13 @@
 <h2>My Decks</h2>
 <ul class="decks">
-  <li *ngFor="let deck of decks">
-    <span class="badge">{{deck.name}}</span> {{deck.deckType}}
+  <li *ngFor="let deck of decks" (click)="onSelect(deck)">
+    <span class="badge">{{deck.name}}</span> ({{deck.deckType}})
   </li>
 </ul>
+<h2>{{selectedDeck.name | uppercase}} Details</h2>
+<div> 
+ Name: {{selectedDeck.name}}
+</div>
+<div>numCards: {{selectedDeck.numCards}}</div>
+<div>Color: {{selectedDeck.color}}</div>
+<div>Deck type: {{selectedDeck.deckType}}</div>

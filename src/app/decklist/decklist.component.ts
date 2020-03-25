@@ -10,6 +10,11 @@ import { DECKS } from '../fakeDecks';
 export class DecklistComponent implements OnInit {
   
   decks = DECKS;
+  
+  selectedDeck: Deck;
+  onSelect(deck: Deck): void {
+  this.selectedDeck = deck;
+}
 
   constructor() { }
 
