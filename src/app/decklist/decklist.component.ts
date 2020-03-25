@@ -5,11 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './decklist.component.html',
   styleUrls: ['./decklist.component.css']
 })
-export class DecklistComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+export class DecklistComponent {
+  
+  deck = 'White weenies';
 
 }
